@@ -4,10 +4,11 @@
 @import "{{ site.theme }}";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&family=Varela+Round&display=swap');
 
-
 :is(h1,h2,h3,h4,h5,h6) {
- font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 2em;
 }
+
 header h1 {
   font-family: 'Varela Round', sans-serif;
 }
@@ -40,9 +41,17 @@ nav {
 }
 
 .wrapper {
- width: 1100px;
+ width: calc(100% - 600px);
 }
 
 .wrapper > section {
   width: auto;
+}
+
+footer {
+  position: relative;
+  margin-left: 0;
+  bottom: auto;
+  left: auto;
+  text-align: center;
 }
