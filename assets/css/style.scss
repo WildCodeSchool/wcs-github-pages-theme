@@ -2,8 +2,26 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&family=Varela+Round&display=swap');
+
+
+:is(h1,h2,h3,h4,h5,h6) {
+ font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
 header {
   background: none;
-  background-color: #e66ba8;
+  background-color: #f76c6c;
+}
+
+.logo {
+  background: url(../images/logo.png);
+}
+
+section {
+  width: clamp(600px, 50%, 1000px);
 }
