@@ -22,10 +22,16 @@ header {
 }
 
 #banner #logo {
-  background: url(../images/logo.png);
+  background: none;
+  background-image: url(../images/logo.png);
+  z-index: 2;
 }
 
-.nav {
+.fork {
+  display: none;
+}
+
+nav {
   margin-left: 0;
   left: 0;
 }
