@@ -5,10 +5,3 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
-  $brand-color:           #e66984 !default;
-  $brand-color-light:     lighten($brand-color, 40%) !default;
-  $brand-color-dark:      darken($brand-color, 25%) !default;
-  
-  $site-title-color:      $brand-color-dark !default;
-  
-  $text-color:            #e66984 !default;
