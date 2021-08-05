@@ -35,6 +35,14 @@ header {
   display: none;
 }
 
+#banner::before {
+  content: 'Workshop';
+  font-variant: small-caps;
+  font-size: 1.5em;
+  margin-top:15px;
+  color: #fbfbfb;
+}
+
 nav {
   margin-left: 0;
   left: 0;
