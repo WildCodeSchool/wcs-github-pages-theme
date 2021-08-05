@@ -1,3 +1,9 @@
 ---
 ---
 
+@import "{{ site.theme }}";
+
+header {
+  background: none;
+  background-color: #e66ba8;
+}
