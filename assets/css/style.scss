@@ -21,7 +21,7 @@ header {
   background-color: #f76c6c;
 }
 
-#logo {
+#banner #logo {
   background: url(../images/logo.png);
 }
 
@@ -30,10 +30,10 @@ header {
   left: 0;
 }
 
-.wrapper {
-  width: 1100px;
+.wrapper {
+ width: 1100px;
 }
 
-.wrapper > section {
+.wrapper > section {
   width: auto;
 }
