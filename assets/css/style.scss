@@ -4,23 +4,39 @@
 @import "{{ site.theme }}";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&family=Varela+Round&display=swap');
 
+:root {
+  --container-width:1000px;
+  --nav-width:300px;
+  --font-size: 16pt;
+  --spacing:8px;
+  --spacing-2:16px;
+  --spacing-3:24px;
+  --spacing-4:48px;
+
+  --main-color: #f76c6c;
+  --light-color: #fbfbfb;
+}
+
 :is(h1,h2,h3,h4,h5,h6) {
   font-family: 'Varela Round', sans-serif;
-  margin-top: 2em;
+  margin-top: var(--spacing-3);
 }
 
 header h1 {
   font-family: 'Varela Round', sans-serif;
+  margin-top: var(--spacing);
 }
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-size: var(--font-size);
+  line-height: 150%;
 }
 
 header {
   background: none;
-  background-color: #f76c6c;
-  padding: 40px;
+  background-color:var(--main-color);
+  padding: var(--spacing-4);
   min-height: 0;
 }
 
@@ -39,17 +55,19 @@ header {
   content: 'Workshop';
   font-variant: small-caps;
   font-size: 1.5em;
-  margin-top:15px;
-  color: #fbfbfb;
+  margin-top: var(--spacing-2);
+  color: var(--light-color);
 }
 
 nav {
   margin-left: 0;
   left: 0;
+  width: var(--nav-width);
 }
 
 .wrapper {
- width: calc(100% - 600px);
+  margin-left: var(--nav-width) + var(--spacing-2);
+  width: calc(100% - var(--nav-width) - var(--spacing-2))
 }
 
 .wrapper > section {
