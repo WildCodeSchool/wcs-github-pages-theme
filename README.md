@@ -13,3 +13,14 @@
 Lorem ipsum dolor
 
 ![placeholder](https://via.placeholder.com/350x150)
+
+### Level 4 Title
+
+This is some `inline code` example
+
+And below some block code :
+```php
+// block code
+$type = 'workshop';
+strtoupper($type);
+```
