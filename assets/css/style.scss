@@ -5,16 +5,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&family=Varela+Round&display=swap');
 
 :root {
-  --container-width:1000px;
-  --nav-width:300px;
+  --container-width: 1000px;
+  --nav-width: 300px;
+  
   --font-size: 16pt;
-  --spacing:8px;
-  --spacing-2:16px;
-  --spacing-3:24px;
-  --spacing-4:48px;
+  --spacing: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 48px;
 
   --main-color: #f76c6c;
   --light-color: #fbfbfb;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 :is(h1,h2,h3,h4,h5,h6) {
@@ -41,6 +46,9 @@ header {
 }
 
 #banner #logo {
+  position: initial;
+  right: initial;
+  top: initial;
   background: none;
   background-size: cover;
   background-image: url(../images/logo.png);
@@ -51,12 +59,20 @@ header {
   display: none;
 }
 
+#banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #banner::before {
   content: 'Workshop';
   font-variant: small-caps;
-  font-size: 1.5em;
-  margin-top: var(--spacing-2);
+  font-size: 1.3em;
+  margin-left: var(--spacing-2);
   color: var(--light-color);
+  font-weight: bold;
+  opacity: 0.6;
 }
 
 nav {
