@@ -25,7 +25,7 @@
 
 :is(h1,h2,h3,h4,h5,h6) {
   font-family: 'Varela Round', sans-serif;
-  margin-top: var(--spacing-3);
+  margin-top: var(--spacing-4);
 }
 
 header h1 {
@@ -37,6 +37,10 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: var(--font-size);
   line-height: 150%;
+}
+
+li > p {
+  margin-bottom: 0;
 }
 
 header {
@@ -83,8 +87,8 @@ nav {
 }
 
 .wrapper {
-  margin-left: var(--nav-width) + var(--spacing-2);
-  width: calc(100% - var(--nav-width) - var(--spacing-2))
+  margin-left: calc(var(--nav-width) + var(--spacing-4));
+  width: calc(100% - var(--nav-width) - var(--spacing-8))
 }
 
 .wrapper > section {
