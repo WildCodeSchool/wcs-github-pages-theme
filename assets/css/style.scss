@@ -19,6 +19,7 @@
 
   --main-color: #f76c6c;
   --light-color: #fbfbfb;
+  --secondary-color: #FFD64F;
 }
 
 * {
@@ -74,6 +75,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--secondary-color);
 }
 
 #banner::before {
